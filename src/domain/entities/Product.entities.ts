@@ -7,7 +7,7 @@ export interface Product {
       discount: number,
       rating: number,
       stock: number,
-      status: string,
+      status: "Low Stock" | "In Stock",
       thumbnail: string,
       images: string[]
 }

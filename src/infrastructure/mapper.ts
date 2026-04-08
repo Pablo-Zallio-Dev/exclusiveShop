@@ -9,7 +9,7 @@ interface ProductDTO {
       discountPercentage: number,
       rating: number,
       stock: number,
-      availabilityStatus: string,
+      availabilityStatus:  "Low Stock" | "In Stock",
       thumbnail: string,
       images: string[]
 }

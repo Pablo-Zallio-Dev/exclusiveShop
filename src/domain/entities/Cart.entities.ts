@@ -1,12 +1,12 @@
 import type { Product } from "./Product.entities";
 
-interface Items {
+interface Item {
       product: Product,
       quantity: number
 }
 
 export interface Cart {
-      items: Items[],
+      items: Item[],
       totalItems: number,
       totalPrice: number,
 }
