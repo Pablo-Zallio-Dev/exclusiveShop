@@ -7,7 +7,7 @@ export const apiProductRepository = (): ProductRepository => ({
 
       
 
-      getOffersProduct: async (maxPrice: number) => {
+      getOffersProducts: async (maxPrice: number) => {
             try {
                   const response = await fetch(`${baseURL}/products`)
                   if (!response.ok) {
