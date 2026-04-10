@@ -1,14 +1,12 @@
-import { Link } from "react-router-dom"
+import Header from "./presentation/Components/layouts/Header"
+import AppRouter from "./presentation/Router/AppRouter"
 
 
 const App = () => {
   return (
     <>
-    <nav className="">
-      <Link to='/'> Home </Link>
-      <Link to='/contact'> Contacto </Link>
-      <Link to='/about'> nosotros </Link>
-    </nav>
+    <Header />
+    <AppRouter/>
       
     </>
   )
