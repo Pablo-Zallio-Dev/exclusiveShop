@@ -21,7 +21,6 @@ export const apiProductRepository = (): ProductRepository => ({
                   return []
             }
       },
-
       getCategories: async () => {
             try {
                   const response = await fetch(`${baseURL}/products/category-list`)
@@ -36,7 +35,6 @@ export const apiProductRepository = (): ProductRepository => ({
                   return []
             }
       },
-
       getProductForCategory: async (category: string) => {
             try {
                   const response = await fetch(`${baseURL}/products/category/${category}`)
