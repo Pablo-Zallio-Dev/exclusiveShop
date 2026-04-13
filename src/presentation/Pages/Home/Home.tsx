@@ -1,9 +1,13 @@
+import HeroImage from "../../Components/layouts/HeroImage"
 
 const Home = () => {
+
+      
   return (
     <>
     
-    <p className=""></p>
+    <HeroImage />
+   
 
     </>
   )

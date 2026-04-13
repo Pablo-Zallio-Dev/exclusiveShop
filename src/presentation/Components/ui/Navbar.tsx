@@ -9,19 +9,19 @@ const Navbar = () => {
             <nav className=" navbar  ">
                   <Link className=" link__navbar  " to='/'>
                         <img src={iconHome} alt="" className=" w-5.5 md:hidden " />
-                        <p className="  transition-all duration-400 ">Inicio</p>
+                        <p className="  font-semibold md:font-normal ">Inicio</p>
                   </Link>
                   <Link className=" link__navbar " to='/contact'>
                         <img src={iconContact} alt="" className=" w-5.5 md:hidden " />
-                        <p className="  ">Contacto</p>
+                        <p className=" font-semibold md:font-normal ">Contacto</p>
                   </Link>
                   <Link className=" link__navbar " to='/about'>
                         <img src={iconAbout} alt="" className=" w-5.5 md:hidden " />
-                        <p className="  ">Nosotros</p>
+                        <p className=" font-semibold md:font-normal ">Nosotros</p>
                   </Link>
                   <Link className=" link__navbar " to='/signup'>
                         <img src={iconRegister} alt="" className=" w-5.5 md:hidden " />
-                        <p className="  ">Registrate</p>
+                        <p className=" font-semibold md:font-normal ">Registrate</p>
                   </Link>
 
             </nav>

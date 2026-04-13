@@ -16,10 +16,13 @@ interface ProductStore {
       fetchCategories: () => Promise<void>,
 
       productForCategoryList: Product[],
-      fetchProductForCategory: ( category: string ) => Promise<void>,
+      fetchProductForCategory: (category: string) => Promise<void>,
 
       topRatedList: Product[],
       fetchTopRatedList: () => Promise<void>,
+
+      productMultipleImages: Product[],
+      fetchProductMultipleImages: () => Promise<void>
 }
 
 export const ProductStore = create<ProductStore>((set) => ({
@@ -35,7 +38,7 @@ export const ProductStore = create<ProductStore>((set) => ({
                   const response = await apiProductRepository().getAllProducts()
                   set({ productsList: response, isLoading: false })
 
-            } catch  {
+            } catch {
                   set({ error: 'Error', isLoading: false })
             }
       },
@@ -48,21 +51,21 @@ export const ProductStore = create<ProductStore>((set) => ({
                   const response = await apiProductRepository().getOffersProducts(maxPrice)
                   set({ offersProductsList: response, isLoading: false })
 
-            } catch  {
+            } catch {
                   set({ error: 'Error al cargar las ofertas', isLoading: false })
             }
 
       },
 
       categoriesList: [],
-      
+
       fetchCategories: async () => {
             try {
                   set({ isLoading: true, error: null })
                   const response = await apiProductRepository().getCategories()
                   set({ categoriesList: response, isLoading: false })
-                  
-            } catch  {
+
+            } catch {
                   set({ error: 'Error al cargarlas categorias', isLoading: false })
             }
       },
@@ -74,22 +77,35 @@ export const ProductStore = create<ProductStore>((set) => ({
                   set({ isLoading: true, error: null })
                   const response = await apiProductRepository().getProductForCategory(category)
                   set({ productForCategoryList: response, isLoading: false })
-                  
-            } catch  {
+
+            } catch {
                   set({ error: 'Error al cargar los productos por categorias', isLoading: false })
             }
       },
 
       topRatedList: [],
 
-       fetchTopRatedList: async () => {
+      fetchTopRatedList: async () => {
             try {
                   set({ isLoading: true, error: null })
                   const response = await apiProductRepository().getTopRated()
                   set({ topRatedList: response, isLoading: false })
-                  
+
             } catch {
                   set({ error: 'Error al vragar valorados', isLoading: false })
             }
       },
+
+      productMultipleImages: [],
+
+      fetchProductMultipleImages: async () => {
+            try {
+                  set({ isLoading: true, error: null })
+                  const response = await apiProductRepository().getProductMultimpleImages()
+                  set({ productMultipleImages: response, isLoading: false })
+            } catch  {
+                  set({ error: 'Error en la carga', isLoading: false })
+
+            }
+      }
 }))

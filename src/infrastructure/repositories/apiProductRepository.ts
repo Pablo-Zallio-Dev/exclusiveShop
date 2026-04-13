@@ -77,7 +77,27 @@ export const apiProductRepository = (): ProductRepository => ({
                   console.log(error)
                   return []
             }
+      },
+      getProductMultimpleImages: async() => {
+            try {
+                  const response = await fetch(`${baseURL}/products`)
+                  if (!response.ok) {
+                        throw new Error(`Error en la petición: ${response.status} ${response.statusText}`);
+                  }
+                  const data = await response.json()
+                  const products = mapperProductList(data.products)
+
+                 
+                  return products.filter((product) => product.images.length >= 3)
+
+                  
+
+            } catch (error) {
+                  console.log(error)
+                  return []
+            }
       }
+
 
 })
 
