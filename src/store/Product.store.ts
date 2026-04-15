@@ -10,7 +10,7 @@ interface ProductStore {
       fetchProducts: () => Promise<void>,
 
       offersProductsList: Product[],
-      fetchOffersProducts: (maxPrice: number) => Promise<void>,
+      fetchOffersProducts: () => Promise<void>,
 
       categoriesList: string[],
       fetchCategories: () => Promise<void>,
@@ -45,10 +45,10 @@ export const ProductStore = create<ProductStore>((set) => ({
 
       offersProductsList: [],
 
-      fetchOffersProducts: async (maxPrice: number) => {
+      fetchOffersProducts: async () => {
             try {
                   set({ isLoading: true, error: null })
-                  const response = await apiProductRepository().getOffersProducts(maxPrice)
+                  const response = await apiProductRepository().getOffersProducts()
                   set({ offersProductsList: response, isLoading: false })
 
             } catch {

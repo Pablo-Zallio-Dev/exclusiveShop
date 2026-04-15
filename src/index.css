@@ -53,9 +53,10 @@
       --bg-black: #000;
       --bg-white: #fff;
       --bg-secondary-gray: #f5f5f5;
+      
       --color-border-line: #3f40423b;
       --color-footer: #9ea3a8;
-      --color-red-title: #DB4444;      
+      --color-red: #DB4444;      
 }
 
 
@@ -69,8 +70,9 @@
 
       --color-secondary-gray: var(--bg-secondary-gray);
       --color-border-line: var(--color-border-line);
+
       --color-footer: var(--color-footer);
-      --color-red-title: var(--color-red-title);
+      --color-red: var(--color-red);
 
 }
 

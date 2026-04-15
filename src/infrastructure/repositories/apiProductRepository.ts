@@ -7,7 +7,7 @@ export const apiProductRepository = (): ProductRepository => ({
 
       
 
-      getOffersProducts: async (maxPrice: number) => {
+      getOffersProducts: async () => {
             try {
                   const response = await fetch(`${baseURL}/products`)
                   if (!response.ok) {
@@ -15,7 +15,7 @@ export const apiProductRepository = (): ProductRepository => ({
                   }
                   const data = await response.json()
                   const products = mapperProductList(data.products)
-                  return products.filter((product) => product.price < maxPrice)
+                  return products.filter((product) => product.discount > 13)
             } catch (error) {
                   console.log(error)
                   return []

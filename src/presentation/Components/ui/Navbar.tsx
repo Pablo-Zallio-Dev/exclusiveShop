@@ -6,7 +6,7 @@ import iconRegister from '../../../assets/icons/icon-signin.svg'
 const Navbar = () => {
       return (
 
-            <nav className=" navbar  ">
+            <nav className=" navbar z-500  ">
                   <Link className=" link__navbar  " to='/'>
                         <img src={iconHome} alt="" className=" w-5.5 md:hidden " />
                         <p className="  font-semibold md:font-normal ">Inicio</p>
