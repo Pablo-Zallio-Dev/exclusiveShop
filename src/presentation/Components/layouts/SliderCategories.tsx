@@ -18,8 +18,9 @@ const SliderCategories = () => {
       return (
             <section className="">
                   <TitleSection titleText="Categorias" />
-                  <h2 className=" py-2 font-inter font-bold text-xl "> Selecciona nuesta categoria </h2>
+                  <h2 className=" py-2 font-inter font-bold text-xl "> Selecciona una categoria </h2>
                   <CategoriesSlider categories={categoriesList} />
+                  
             </section>
       )
 }

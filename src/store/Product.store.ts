@@ -15,6 +15,8 @@ interface ProductStore {
       categoriesList: string[],
       fetchCategories: () => Promise<void>,
 
+      
+
       productForCategoryList: Product[],
       fetchProductForCategory: (category: string) => Promise<void>,
 

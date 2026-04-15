@@ -18,10 +18,10 @@ const CategoriesSlider = ({ categories }: { categories: string[] }) => {
     
 
       return (
-            <div className="relative flex flex-col items-center gap-6 py-4 w-full ">
+            <div className="relative flex flex-col items-center gap-6 pt-4 pb-14 w-full">
                   <div className="overflow-hidden w-full" ref={emblaRef}>
                         {/* Este es el contenedor crítico */}
-                        <div className=" flex gap-4 md:gap-12 py-4 px-4  ">
+                        <div className=" flex flex-[0_0_10%] md:flex-[0_0_12%]  gap-4 md:gap-12 py-4 px- ">
                               {categories.map((item) => (
                                     <IconCategory category={item} />
                               ))}

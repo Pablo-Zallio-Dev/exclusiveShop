@@ -19,10 +19,10 @@ export const ProductSlider = ({ product }: { product: Product[] }) => {
       }, [emblaApi]);
 
       return (
-            <div className="relative flex flex-col items-center gap-6 py-4 w-full">
+            <div className="relative flex flex-col items-center gap-6 pt-4 pb-14 w-full border-b border-secondary-gray">
                   <div className="overflow-hidden w-full" ref={emblaRef}>
                         {/* Este es el contenedor crítico */}
-                        <div className="flex gap-4 md:gap-12 ">
+                        <div className="flex flex-[0_0_10%] md:flex-[0_0_10%]  gap-4 md:gap-12 ">
                               {product.map((item) => (
                                     <CardProducts key={item.id} prod={item} />
                               ))}

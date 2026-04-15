@@ -10,9 +10,8 @@ import StartRating from "./ui/StartRating";
 const CardProducts = ({ prod }: { prod: Product }) => {
 
 
-      console.log(prod);
       return (
-            <section className="flex-[0_0_10%] md:flex-[0_0_10%]  ">
+            <section className=" ">
                   <section className=" flex flex-col justify-between gap-4 w-50 md:w-56 ">
                         <div className=" relative overflow-hidden rounded-sm  bg-white group ">
                               <img

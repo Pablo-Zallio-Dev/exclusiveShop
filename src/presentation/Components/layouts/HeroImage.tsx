@@ -9,7 +9,6 @@ const HeroImage = () => {
       //const isLoading = ProductStore((state) => state.isLoading)
 
       const { currentProduct } = useBannerInterval(fetchProductImages, productImages, 6000)
-      console.log(currentProduct)
 
       if (!currentProduct) {
             return <p className="animate-pulse">Cargando banner...</p>;
