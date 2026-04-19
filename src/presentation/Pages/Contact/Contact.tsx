@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom"
+import Infocontact from "./Layout/InfoContact"
+import FormContact from "./Layout/FormContact"
 
 const Contact = () => {
 
@@ -9,8 +11,13 @@ const Contact = () => {
                   <div className=" py-20 text-sm hidden md:block ">
                         
                         <Link to='/'>Inicio / </Link>
-                        <span className=" font-semibold "> Contact</span>
+                        <span className=" font-semibold "> Contacto</span>
                   </div>
+
+                  <section className=" grid grid-cols-1 md:grid-cols-3 gap-8 py-12 ">
+                        <Infocontact />
+                        <FormContact />
+                  </section>
             </section>
 
       )
