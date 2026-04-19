@@ -3,6 +3,8 @@ import BannerProducts from "../../Components/layouts/banner/BannerProducts"
 import HeroImage from "../../Components/layouts/HeroImage"
 import OffersProduct from "../../Components/layouts/OffersProduct"
 import ProductsByCategory from "../../Components/layouts/ProductsByCategory"
+import RatedProducts from "../../Components/layouts/RatedProducts"
+import ServiceSection from "../../Components/layouts/ServiceSection"
 import SliderCategories from "../../Components/layouts/SliderCategories"
 
 const Home = () => {
@@ -18,7 +20,8 @@ const Home = () => {
                         <ProductsByCategory />
                         <BannerProducts />
                         <AllProducts />
-
+                        <RatedProducts /> 
+                        <ServiceSection />
                   </section>
 
 
