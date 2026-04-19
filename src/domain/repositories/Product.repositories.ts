@@ -5,6 +5,7 @@ export interface ProductRepository {
       getOffersProducts(): Promise<Product[]>
       getCategories(): Promise<string[]>
       getProductForCategory(category: string): Promise<Product[]>
+      getProductForBanner(category: string): Promise<Product[]>
       getTopRated(): Promise<Product[]>
       getProductMultimpleImages(): Promise<Product[]>
 }

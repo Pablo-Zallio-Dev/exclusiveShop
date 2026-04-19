@@ -12,12 +12,12 @@ const CardProducts = ({ prod }: { prod: Product }) => {
 
       return (
             <section className=" ">
-                  <section className=" flex flex-col justify-between gap-4 w-50 md:w-56 ">
+                  <section className=" flex flex-col justify-between gap-4 w-50 md:w-56 lg:w-50 ">
                         <div className=" relative overflow-hidden rounded-sm  bg-white group ">
                               <img
                                     src={prod.images[0]}
                                     alt={prod.title}
-                                    className="w-full object-contain bg-secondary-gray "
+                                    className="w-full object-contain bg-secondary-gray md:group-hover:scale-110 transition-transform duration-150 "
                               />
                               <section className=" absolute top-0 p-2.5 flex justify-between items-start w-full ">
                               <BadgeDiscount discount={prod.discount} />

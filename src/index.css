@@ -53,7 +53,9 @@
       --bg-black: #000;
       --bg-white: #fff;
       --bg-secondary-gray: #f5f5f5;
+      --color-green-banner: #00FF66;
       
+      --color-green-text-banner: #00FF66;
       --color-border-line: #3f40423b;
       --color-footer: #9ea3a8;
       --color-red: #DB4444;      
@@ -67,13 +69,16 @@
       --font-inter: "Inter Variable", sans-serif;     
       
       --text-xxs: 0.65rem;
-
+      
       --color-secondary-gray: var(--bg-secondary-gray);
       --color-border-line: var(--color-border-line);
-
+      
+      --color-green-text-banner: var( --green-text-banner );
+      
       --color-footer: var(--color-footer);
       --color-red: var(--color-red);
-
+      --color-green-banner: var(--green-banner);
+      
 }
 
 html {

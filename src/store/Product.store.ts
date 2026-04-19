@@ -15,10 +15,13 @@ interface ProductStore {
       categoriesList: string[],
       fetchCategories: () => Promise<void>,
 
-      
+      productsBanner: Product[],
+      fetchProductBanner: (category: string) => Promise<void>,
 
       productForCategoryList: Product[],
       fetchProductForCategory: (category: string) => Promise<void>,
+      resetForCategoryList: () => void,
+
 
       topRatedList: Product[],
       fetchTopRatedList: () => Promise<void>,
@@ -60,7 +63,6 @@ export const ProductStore = create<ProductStore>((set) => ({
       },
 
       categoriesList: [],
-
       fetchCategories: async () => {
             try {
                   set({ isLoading: true, error: null })
@@ -72,8 +74,18 @@ export const ProductStore = create<ProductStore>((set) => ({
             }
       },
 
+      productsBanner:[],
+      fetchProductBanner: async( category: string ) => {
+            try {
+                  set({ isLoading: true, error: null })
+                  const response = await apiProductRepository().getProductForBanner(category)
+                  set({ productsBanner: response })
+            } catch {
+                  
+                  set({ error: 'Error al cargar los productos por categorias', isLoading: false })
+            }
+      },
       productForCategoryList: [],
-
       fetchProductForCategory: async (category: string) => {
             try {
                   set({ isLoading: true, error: null })
@@ -85,8 +97,12 @@ export const ProductStore = create<ProductStore>((set) => ({
             }
       },
 
-      topRatedList: [],
+      resetForCategoryList: () => {
+            set({ productForCategoryList: [] })
+      },
 
+
+      topRatedList: [],
       fetchTopRatedList: async () => {
             try {
                   set({ isLoading: true, error: null })

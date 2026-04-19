@@ -49,6 +49,22 @@ export const apiProductRepository = (): ProductRepository => ({
                   return []
             }
       },
+
+      getProductForBanner: async( category: string ) => {
+            try {
+                  const response = await fetch(`https://dummyjson.com/products/category/${category}`)
+                   if (!response.ok) {
+                        throw new Error(`Error en la petición: ${response.status} ${response.statusText}`);
+                  }
+                  const data = await response.json()
+                  const products = mapperProductList(data.products)
+                  return products
+            } catch (error) {
+                  console.log(error)
+                  return []
+            }
+      },
+
       getTopRated: async () => {
             try {
                   const response = await fetch(`${baseURL}/products`)
