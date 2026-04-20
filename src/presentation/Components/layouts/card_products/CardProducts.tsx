@@ -1,7 +1,5 @@
-//import { Eye, Heart } from 'lucide-react'
-//import { Link } from 'react-router-dom'
-
 import type { Product } from "../../../../domain/entities/Product.entities";
+import { CartStore } from "../../../../store/Cart.store";
 import BadgeDiscount from "./ui/BadgeDiscount";
 import ButtonAdd from "./ui/ButtonAdd";
 import IconButtons from "./ui/IconButtons";
@@ -9,6 +7,8 @@ import StartRating from "./ui/StartRating";
 
 const CardProducts = ({ prod }: { prod: Product }) => {
 
+      const cartItem = CartStore((state) => state.cartItems)
+      console.log(cartItem)
 
       return (
             <section className=" ">
@@ -23,7 +23,7 @@ const CardProducts = ({ prod }: { prod: Product }) => {
                               <BadgeDiscount discount={prod.discount} />
                               <IconButtons />
                               </section>
-                              <ButtonAdd />
+                              <ButtonAdd item={prod} />
                         </div>
                         <section className=" flex flex-col justify-end  gap-2 ">
                               <p className=" w-5/6 text-xs md:text-sm "> {prod.title} </p>

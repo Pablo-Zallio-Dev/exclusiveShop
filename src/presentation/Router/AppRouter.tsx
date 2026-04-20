@@ -4,6 +4,7 @@ import Contact from "../Pages/Contact/Contact"
 import Home from "../Pages/Home/Home"
 import Signup from "../Pages/Signup/Signup"
 import ProductDescrption from "../Pages/Description_Product/ProductDescrption"
+import Cart from "../Components/layouts/layout_cart/Cart"
 
 const AppRouter = () => {
       return (
@@ -13,6 +14,8 @@ const AppRouter = () => {
                   <Route path="/about" element={<About />} />
                   <Route path="/signup" element={<Signup />} />
                   <Route path="/descproduct" element={ <ProductDescrption /> } />
+                  <Route path="/cart" element={ <Cart /> } />
+                  
                   <Route path="/*" element={<Navigate to='/' />} />
             </Routes>
       )
