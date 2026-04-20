@@ -6,7 +6,8 @@ export const formSchema = z.object({
       email: z.email({
             message: 'Por favor, ingrese un correo valido'
       }),
-      phone:z.string({
+      phone:z.string()
+            .min(1,{
             message: 'Por favor, ingrese un telefono valido'
       }),
       textarea: z.string()

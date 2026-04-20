@@ -14,7 +14,7 @@ const Contact = () => {
                         <span className=" font-semibold "> Contacto</span>
                   </div>
 
-                  <section className=" grid grid-cols-1 md:grid-cols-3 gap-8 py-12 ">
+                  <section className=" grid grid-cols-1 md:grid-cols-3 gap-8 pb-24 ">
                         <Infocontact />
                         <FormContact />
                   </section>

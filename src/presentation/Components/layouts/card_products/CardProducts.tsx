@@ -12,7 +12,7 @@ const CardProducts = ({ prod }: { prod: Product }) => {
 
       return (
             <section className=" ">
-                  <section className=" flex flex-col justify-between gap-4 w-50 md:w-56 lg:w-50 ">
+                  <section className=" flex flex-col justify-between gap-4 w-30 md:w-56 lg:w-50 ">
                         <div className=" relative overflow-hidden rounded-sm  bg-white group ">
                               <img
                                     src={prod.images[0]}

@@ -3,7 +3,7 @@ import iconMail from '../../../../assets/icons/icon-mail.png'
 
 const Infocontact = () => {
       return (
-            <section className=" py-9 px-7 xl:px-18 shadow-md/10     ">
+            <section className=" py-9 px-7 xl:px-18 shadow-md/10  border border-secondary-gray    ">
                   <section className=" flex flex-col gap-6 border-b border-secondary-gray ">
                         <div className=" flex items-center gap-4 ">
                               <img src={iconPhone} alt="" />

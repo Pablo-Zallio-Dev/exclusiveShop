@@ -20,7 +20,7 @@ const GridAllProducts = () => {
 
   return (
     <section className=" my-20 border-b border-secondary-gray  ">
-            <section className={ ` grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 py-12 justify-items-center gap-12 ${ viewAll ? 'h-min' : 'h-105'} h-105 overflow-hidden ` }>
+            <section className={ ` grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 py-12 justify-items-center gap-12 ${ viewAll ? 'h-min' : 'h-105'} h-105 overflow-hidden ` }>
                   {
                         productList.map((products) => (
                               <CardProducts prod={products} />
