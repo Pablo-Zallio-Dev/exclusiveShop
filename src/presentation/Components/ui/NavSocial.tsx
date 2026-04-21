@@ -26,7 +26,7 @@ const NavSocial = () => {
                         <img src={iconCart} alt="icono del carrito" className=" icon__social  w-6 " />
                         <BadgeCart total={total} />
                   </Link >
-                  <img src={iconUser} alt="icono de usuario" className=" icon__social  w-6 " />
+                  <img src={iconUser} alt="icono de usuario" className=" icon__social  w-6 hidden " />
 
             </section>
       )

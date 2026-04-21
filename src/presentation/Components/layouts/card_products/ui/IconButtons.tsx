@@ -16,8 +16,8 @@ const IconButtons = ( {prod}: {prod: Product} ) => {
                         <Heart  className=" w-3.5 md:w-4.5 h-3.5 md:h-4.5  " />
                   </section>
 
-                  <Link to="/descproduct" className=" p-1.5 bg-white rounded-full ">
-                        <Eye className=" w-3.5 md:w-4.5 h-3.5 md:h-4.5 " />
+                  <Link to="/descproduct" state={{data: prod}} className=" p-1.5 bg-white rounded-full " >
+                        <Eye className=" w-3.5 md:w-4.5 h-3.5 md:h-4.5 "  />
                   </Link>
                  
             </section>
