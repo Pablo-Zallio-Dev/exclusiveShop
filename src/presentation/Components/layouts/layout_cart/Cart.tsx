@@ -9,6 +9,7 @@ const Cart = () => {
                         <span className=" font-semibold "> Carrito</span>
                   </div>
                   <CartDetails />
+                  
             </section>
       )
 }

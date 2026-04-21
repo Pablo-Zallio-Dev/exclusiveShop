@@ -1,8 +1,6 @@
-import { CartStore } from '../../../../../store/Cart.store'
 
-const BadgeCart = () => {
+const BadgeCart = ( {total}: {total: number} ) => {
 
-      const total = CartStore((state) => state.getTotalItems());
 
 
   return (

@@ -1,5 +1,4 @@
 import type { Product } from "../../../../domain/entities/Product.entities";
-import { CartStore } from "../../../../store/Cart.store";
 import BadgeDiscount from "./ui/BadgeDiscount";
 import ButtonAdd from "./ui/ButtonAdd";
 import IconButtons from "./ui/IconButtons";
@@ -7,8 +6,6 @@ import StartRating from "./ui/StartRating";
 
 const CardProducts = ({ prod }: { prod: Product }) => {
 
-      const cartItem = CartStore((state) => state.cartItems)
-      console.log(cartItem)
 
       return (
             <section className=" ">
@@ -21,7 +18,7 @@ const CardProducts = ({ prod }: { prod: Product }) => {
                               />
                               <section className=" absolute top-0 p-2.5 flex justify-between items-start w-full ">
                               <BadgeDiscount discount={prod.discount} />
-                              <IconButtons />
+                              <IconButtons prod={prod} />
                               </section>
                               <ButtonAdd item={prod} />
                         </div>

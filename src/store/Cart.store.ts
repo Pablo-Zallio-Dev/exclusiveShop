@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import type { Product } from "../domain/entities/Product.entities";
 
-interface CartItem {
+export interface CartItem {
       product: Product;
       quantity: number;
 }
@@ -42,13 +42,7 @@ export const CartStore = create<CartStore>()(
                               );
 
                               if (existingProduct) {
-                                    return {
-                                          cartItems: state.cartItems.map((item) =>
-                                                item.product.id === product.id
-                                                      ? { ...item, quantity: item.quantity + 1 }
-                                                      : item,
-                                          ),
-                                    };
+                                    return state
                               }
 
                               return {
@@ -111,6 +105,8 @@ export const CartStore = create<CartStore>()(
                         })),
 
                   finishLoading: () => set({ isLoading: false }),
+                 
+                 
             }),
             {
                   name: "cart-storage",
