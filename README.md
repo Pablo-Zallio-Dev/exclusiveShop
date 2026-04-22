@@ -1,70 +1,62 @@
-<div align="center">
+# 🛍️ Exclusive Shop
 
-<img alt=''  src='./public/logo_dark.webp'>
+Tienda online de moda y electrónica desarrollada como proyecto de portfolio. Diseño moderno, responsive y con funcionalidades de e-commerce completas.
 
+🔗 **[Ver demo en vivo](https://exclusive-shop-snowy.vercel.app)**
 
-### PZ Web Developer
+---
 
-<a href='https://portfolio-opal-nine-21.vercel.app/'> 👉 Portfolio web 👈 </a>
+## 📸 Vista previa
 
-<hr width='560' />
-
-# Exclusive 
-### e-commerce
 
 <img width='140' src='./public/images/image-mobile.jpg'>
 <img width='240' src='./public/images/image-desktop.jpg'>
 
-<br>
+---
 
-<h2> 🔗 <a href='https://quiz-app-omega-orpin.vercel.app/'> Live demo </a>
+## ✨ Características
 
-</div>
+- 🏠 Página de inicio con banner, productos destacados y categorías
+- 🛒 Carrito de compras con gestión de productos (añadir, eliminar, actualizar cantidad)
+- ❤️ Lista de deseos (wishlist)
+- 🔍 Buscador de productos
+- 📬 Formulario de contacto con **EmailJS**
+- 📱 Diseño totalmente responsive (mobile-first)
+- 🎠 Carruseles de productos con **Embla Carousel**
+- 🔔 Notificaciones con **React Hot Toast**
+- ✅ Validación de formularios con **React Hook Form** + **Zod**
 
-## 🗒️ Descripción
-E-commerce ficticio realizado para aplicar conocimientos sobre arquitectura y mejoras del código.
-Sitio web de venta de productos responsivo, que cuenta con funcionalidades como:
+---
 
-* Guardar en favoritos los productos deseados.
+## 🛠️ Tecnologías
 
-* Guardar en el carrito los productos a comprar.
+| Categoría | Tecnología |
+|---|---|
+| Framework | React 19 |
+| Lenguaje | TypeScript |
+| Bundler | Vite 5 |
+| Estilos | Tailwind CSS 4 |
+| Routing | React Router DOM 7 |
+| Estado global | Zustand |
+| Formularios | React Hook Form + Zod |
+| Email | EmailJS |
+| Carrusel | Embla Carousel |
+| Iconos | Lucide React |
+| Fuentes | Poppins / Inter |
+| Deploy | Vercel |
 
-* Eliminar los productos en el momento que el usuario necesite.
+---
 
-
-## 🎯 Objetivos del proyecto
-- Mejorar la arquitectura con respecto a los datos recibidos.
-- Poner en práctica el manejo de estados con <i> Zustand</i>.
-- Manejo de diferentes rutas mediante React Dom.
-
-
-## ⚒️ Stack Tecnológico
-- **React** - Librería de UI
-- **TypeScript** - Tipado estático
-- **Zustand** - Gestión de estado
-- **Vite** - Build tool
-- **Tailwind** - Estilos
-- **ReactRouter Dom** - Manejo de rutas
-- **Zod - React Hook Form** - Formularios
-
-
-
-
-
-<br>
-<hr>
-
-<div align='center'>
-<br>
-👷‍♂️ Proyecto desarrollado para práctica de conceptos y aprendizaje.
-
-<br>
-
-#### 👌 ¿Te ha gustado? Puedes dejar una estrella ☺️
-
-<br>
+## 👤 Autor
 
 ### Desarrollado con 💕 por <a href='https://portfolio-opal-nine-21.vercel.app/'>Pablo.  </a>
 <a href='https://www.linkedin.com/in/pablozalliodev/'>Linkedin -</a>
 <a href="mailto:pablozalliodev@gmail.com" target="_blank"> Correo </a>
 </div>
+
+---
+
+## 📄 Licencia
+
+Este proyecto es de uso libre para fines educativos y de portfolio.
+
