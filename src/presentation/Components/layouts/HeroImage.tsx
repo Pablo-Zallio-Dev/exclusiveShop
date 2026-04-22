@@ -15,7 +15,7 @@ const HeroImage = () => {
       }
       return (
             <>
-                  <section className=" flex justify-center items-center  py-8 ">
+                  <section className=" flex justify-center items-center  py-8 md:pt-60 ">
 
                         <section className="  w-5/6 max-w-222.5 flex justify-center md:justify-around gap-1 items-center p-3 md:py-12 bg-black rounded-md text-white ">
                               <section className=" text-center ">

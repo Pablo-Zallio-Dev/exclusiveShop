@@ -28,6 +28,10 @@ interface ProductStore {
 
       productMultipleImages: Product[],
       fetchProductMultipleImages: () => Promise<void>
+
+      productSearch: Product[],
+      clearProductSearch:() => void,
+      fetchProductSearch: (product: string) => Promise<void>
 }
 
 export const ProductStore = create<ProductStore>((set) => ({
@@ -100,8 +104,6 @@ export const ProductStore = create<ProductStore>((set) => ({
       resetForCategoryList: () => {
             set({ productForCategoryList: [] })
       },
-
-
       topRatedList: [],
       fetchTopRatedList: async () => {
             try {
@@ -123,7 +125,23 @@ export const ProductStore = create<ProductStore>((set) => ({
                   set({ productMultipleImages: response, isLoading: false })
             } catch  {
                   set({ error: 'Error en la carga', isLoading: false })
-
+                  
             }
-      }
+      },
+      
+      productSearch: [],
+
+      fetchProductSearch: async ( product:string ) => {
+            try {
+                  set({ isLoading: true, error: null })
+                  const response = await apiProductRepository().getProductSearch(product)
+                  set({ productSearch: response, isLoading: false })
+            } catch  {
+                  set({ error: 'Error en la carga', isLoading: false })
+                  
+            }
+      },
+      clearProductSearch: () => set({
+            productSearch: []
+      })
 }))

@@ -12,7 +12,6 @@ const NavSocial = () => {
       const total = CartStore((state) => state.getTotalItems());
       const totalFavorite = FavoriteStore((state) => state.favorites.length)
 
-      console.log(totalFavorite)
 
 
 

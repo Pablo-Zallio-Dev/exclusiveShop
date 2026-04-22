@@ -5,7 +5,7 @@ const baseURL = import.meta.env.VITE_API_URL
 
 export const apiProductRepository = (): ProductRepository => ({
 
-      
+
 
       getOffersProducts: async () => {
             try {
@@ -50,10 +50,10 @@ export const apiProductRepository = (): ProductRepository => ({
             }
       },
 
-      getProductForBanner: async( category: string ) => {
+      getProductForBanner: async (category: string) => {
             try {
                   const response = await fetch(`https://dummyjson.com/products/category/${category}`)
-                   if (!response.ok) {
+                  if (!response.ok) {
                         throw new Error(`Error en la petición: ${response.status} ${response.statusText}`);
                   }
                   const data = await response.json()
@@ -94,7 +94,7 @@ export const apiProductRepository = (): ProductRepository => ({
                   return []
             }
       },
-      getProductMultimpleImages: async() => {
+      getProductMultimpleImages: async () => {
             try {
                   const response = await fetch(`${baseURL}/products`)
                   if (!response.ok) {
@@ -102,11 +102,21 @@ export const apiProductRepository = (): ProductRepository => ({
                   }
                   const data = await response.json()
                   const products = mapperProductList(data.products)
-
-                 
                   return products.filter((product) => product.images.length >= 3)
-
-                  
+            } catch (error) {
+                  console.log(error)
+                  return []
+            }
+      },
+      getProductSearch: async (product: string) => {
+            try {
+                  const response = await fetch(`https://dummyjson.com/products/search?q=${product}`)
+                  if (!response.ok) {
+                        throw new Error(`Error en la petición: ${response.status} ${response.statusText}`);
+                  }
+                  const data = await response.json()
+                  const products = mapperProductList(data.products)
+                  return products.filter((product) => product.images.length >= 3)
 
             } catch (error) {
                   console.log(error)

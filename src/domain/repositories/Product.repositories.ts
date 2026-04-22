@@ -8,4 +8,5 @@ export interface ProductRepository {
       getProductForBanner(category: string): Promise<Product[]>
       getTopRated(): Promise<Product[]>
       getProductMultimpleImages(): Promise<Product[]>
+      getProductSearch(product: string): Promise<Product[]>
 }
