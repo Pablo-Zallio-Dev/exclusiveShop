@@ -15,7 +15,7 @@ const Favorites = () => {
                               favoritesProducts.length > 0
                                     ? <>
                                           <TitleSection titleText='Favoritos' />
-                                          <section className=" grid grid-cols-2 md:grid-cols-3 justify-items-center gap-24 pt-12 ">
+                                          <section className=" flex flex-wrap gap-24 pt-12 ">
                                                 {
                                                       favoritesProducts.map((product) => (
                                                             <CardProducts prod={product} />

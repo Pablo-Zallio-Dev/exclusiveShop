@@ -19,7 +19,7 @@ const Navbar = () => {
                         <img src={iconAbout} alt="" className=" w-5.5 md:hidden " />
                         <p className=" font-semibold md:font-normal ">Nosotros</p>
                   </Link>
-                  <Link className=" link__navbar " to='/signup'>
+                  <Link className="  link__navbar link__navbar--hidden " to='/signup'>
                         <img src={iconRegister} alt="" className=" w-5.5 md:hidden " />
                         <p className=" font-semibold md:font-normal ">Registrate</p>
                   </Link>

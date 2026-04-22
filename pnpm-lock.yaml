@@ -23,6 +23,9 @@ importers:
       embla-carousel-react:
         specifier: ^8.6.0
         version: 8.6.0(react@19.2.4)
+      exclusive-project:
+        specifier: 'link:'
+        version: 'link:'
       lucide:
         specifier: ^1.8.0
         version: 1.8.0

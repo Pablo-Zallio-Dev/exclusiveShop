@@ -13,14 +13,14 @@ const Home = () => {
       return (
             <>
 
-                  <HeroImage />
-                  <section className=" px-6 md:px-18 lg:px-32  ">
+                  <section className=" px-6 md:px-18 lg:px-32 pt-50 md:pt-0  ">
+                        <HeroImage />
                         <OffersProduct />
                         <SliderCategories />
                         <ProductsByCategory />
                         <BannerProducts />
                         <AllProducts />
-                        <RatedProducts /> 
+                        <RatedProducts />
                         <ServiceSection />
                   </section>
 

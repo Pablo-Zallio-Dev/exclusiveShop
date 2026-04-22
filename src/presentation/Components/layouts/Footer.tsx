@@ -4,7 +4,7 @@ import iconCopyright from '../../../assets/icons/icon-copyright.svg'
 const Footer = () => {
       return (
             <>
-                  <section className="  flex flex-col items-center py-3 bg-black text-white ">
+                  <section className="  flex flex-col items-center py-3 pb-20 bg-black text-white ">
                         <FooterLists />
                         <section className=" flex items-center gap-1 ">
                               <img src={iconCopyright} alt="" />

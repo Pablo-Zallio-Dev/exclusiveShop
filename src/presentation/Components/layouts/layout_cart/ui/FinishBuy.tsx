@@ -44,8 +44,8 @@ const FinishBuy = ({ isOpen, onClose, cartItems }: Portal) => {
 
 
       return (
-            <section className=" fixed top-0 left-0 flex justify-center items-center w-full h-screen px-4 bg-secondary-gray/50 ">
-                  <section className="  bg-white py-8 ">
+            <section className=" fixed top-0 left-0 z-7000 flex justify-center items-center w-full h-screen px-4  bg-secondary-gray/50 ">
+                  <section className="  bg-white py-8 md:px-16  ">
                         {
                               cartItems.map((product) => (
                                     <section className=" grid grid-cols-4 justify-items-center items-center gap-2  text-xxs md:text-sm ">

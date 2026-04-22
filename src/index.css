@@ -118,7 +118,10 @@ body {
 }
 
 .link__navbar {
-      @apply flex flex-col items-center justify-between gap-0.5  md:py-0.5 md:px-1.5 md:rounded-md md:hover:shadow-sm/50 transition-all duration-300
+      @apply  flex flex-col items-center justify-between gap-0.5  md:py-0.5 md:px-1.5 md:rounded-md md:hover:shadow-sm/50 transition-all duration-300
+}
+.link__navbar--hidden {
+      @apply hidden
 }
 
 @media screen and (min-width: 768px) {
