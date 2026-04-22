@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img alt=''  src='./public/logo_dark.webp'>
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### PZ Web Developer
 
-## React Compiler
+<a href='https://portfolio-opal-nine-21.vercel.app/'> 👉 Portfolio web 👈 </a>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<hr width='560' />
 
-## Expanding the ESLint configuration
+# Exclusive 
+### e-commerce
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<img width='140' src='./public/images/image-mobile.jpg'>
+<img width='240' src='./public/images/image-desktop.jpg'>
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+<br>
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+<h2> 🔗 <a href='https://quiz-app-omega-orpin.vercel.app/'> Live demo </a>
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+</div>
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🗒️ Descripción
+E-commerce ficticio realizado para aplicar conocimientos sobre arquitectura y mejoras del código.
+Sitio web de venta de productos responsivo, que cuenta con funcionalidades como:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+* Guardar en favoritos los productos deseados.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* Guardar en el carrito los productos a comprar.
+
+* Eliminar los productos en el momento que el usuario necesite.
+
+
+## 🎯 Objetivos del proyecto
+- Mejorar la arquitectura con respecto a los datos recibidos.
+- Poner en práctica el manejo de estados con <i> Zustand</i>.
+- Manejo de diferentes rutas mediante React Dom.
+
+
+## ⚒️ Stack Tecnológico
+- **React** - Librería de UI
+- **TypeScript** - Tipado estático
+- **Zustand** - Gestión de estado
+- **Vite** - Build tool
+- **Tailwind** - Estilos
+- **ReactRouter Dom** - Manejo de rutas
+- **Zod - React Hook Form** - Formularios
+
+
+
+
+
+<br>
+<hr>
+
+<div align='center'>
+<br>
+👷‍♂️ Proyecto desarrollado para práctica de conceptos y aprendizaje.
+
+<br>
+
+#### 👌 ¿Te ha gustado? Puedes dejar una estrella ☺️
+
+<br>
+
+### Desarrollado con 💕 por <a href='https://portfolio-opal-nine-21.vercel.app/'>Pablo.  </a>
+<a href='https://www.linkedin.com/in/pablozalliodev/'>Linkedin -</a>
+<a href="mailto:pablozalliodev@gmail.com" target="_blank"> Correo </a>
+</div>
