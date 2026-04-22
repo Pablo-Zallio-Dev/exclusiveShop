@@ -12,16 +12,22 @@ const SearchInput = () => {
 
       const [query, setQuery] = useState('')
 
-      const handleSearch = () => {
-            if (query.trim() !== '') {
-                  getProductSearch(query);
-                  navigate('/search');
-            } else {
-                  // SI ESTÁ VACÍO: Limpia el store y vuelve al inicio
-                  clearProductSearch();
-                  navigate('/');
-            }
-      };
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setQuery(value);
+
+    if (value.trim() === '') {
+      clearProductSearch();
+      navigate('/');
+    }
+  };
+
+  const handleSearch = () => {
+    if (query.trim() !== '') {
+      getProductSearch(query);
+      navigate('/search');
+    }
+  };
 
       const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
             if (e.key === 'Enter') {
@@ -35,7 +41,7 @@ const SearchInput = () => {
             <section className=" col-span-3 pt-2 lg:pt-6  ">
                   <section className=" flex py-2 md:py-2 px-2 w-64 md:w-lg rounded-sm bg-secondary-gray">
                         <input type="text" placeholder='¿Qué estás buscando?' className=' w-full text-xs md:text-sm focus:outline-none ' value={query}
-                              onChange={(e) => setQuery(e.target.value)} // Solo actualiza el texto
+                              onChange={handleChange} // Solo actualiza el texto
                               onKeyDown={handleKeyDown} />
                         <img src={iconSearch} alt=" icono de busqueda " className='w-5' onClick={handleSearch} />
                   </section>

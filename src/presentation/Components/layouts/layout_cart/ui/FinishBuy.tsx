@@ -63,8 +63,10 @@ const FinishBuy = ({ isOpen, onClose, cartItems }: Portal) => {
                         <section className=" flex justify-end px-12 ">
                               <img src={iconsCards} alt="" className=" w-32 md:w-48 " />
                         </section>
-                        <div className=" flex justify-center ">
+                        <div className=" flex gap-3.5 justify-center ">
                               <button className=" bg-red py-2 px-3 my-10 text-white font-semibold rounded-md " onClick={handleFinalize}>Realizar Pedido</button>
+                              <button className="  py-2 px-3 my-10 text-xs font-semibold shadow-sm/20 rounded-md " onClick={onClose}>Volver</button>
+
                         </div>
                   </section>
 

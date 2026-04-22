@@ -13,7 +13,7 @@ const GallerySearch = () => {
                   {
                         productSearch.length > 0
                               ? <ProductResult products={productSearch} />
-                              : <SearchEmpty />
+                              : <SearchEmpty  />
                   }
 
                   </section>
