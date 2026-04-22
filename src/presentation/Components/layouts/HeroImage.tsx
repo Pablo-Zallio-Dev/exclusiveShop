@@ -23,7 +23,7 @@ const HeroImage = () => {
                                     <p className=" text-sm md:text-3xl font-black md:font-bold ">Hasta un 10% descuento</p>
                               </section>
                               <section className=" ">
-                              <img src={currentProduct.images[0]} alt="" className=" h-30 md:h-58 object-contain animate-opacity-product " />
+                              <img src={currentProduct.images[0]} alt="imagen del producto del banner" className=" h-30 md:h-58 object-contain animate-opacity-product " />
                                     
                               </section>
 

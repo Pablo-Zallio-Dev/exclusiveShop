@@ -6,7 +6,7 @@ const Infocontact = () => {
             <section className=" py-9 px-7 xl:px-18 shadow-md/10  border border-secondary-gray    ">
                   <section className=" flex flex-col gap-6 border-b border-secondary-gray ">
                         <div className=" flex items-center gap-4 ">
-                              <img src={iconPhone} alt="" />
+                              <img src={iconPhone} alt="icono de telefono" />
                               <h2 className=" text-sm ">Llamanos</h2>
                         </div>
                         <div className="">
@@ -16,7 +16,7 @@ const Infocontact = () => {
                   </section>
                    <section className=" flex flex-col gap-6 pt-8 ">
                         <div className=" flex items-center gap-4 ">
-                              <img src={iconMail} alt="" />
+                              <img src={iconMail} alt="icono de email" />
                               <h2 className=" text-sm ">Escribenos</h2>
                         </div>
                         <div className="">

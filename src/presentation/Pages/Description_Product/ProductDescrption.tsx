@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom"
+import { Link, Navigate, useLocation } from "react-router-dom"
 import type { Product } from "../../../domain/entities/Product.entities"
 import StartRating from "../../Components/layouts/card_products/ui/StartRating"
 import { Heart } from "lucide-react"
@@ -15,7 +15,8 @@ const ProductDescrption = () => {
 
       const location = useLocation()
       const data = location.state as DataProduct
-      console.log(data)
+
+      if (!location.state) return <Navigate to="/" />; // Redirección de seguridad
 
       if (!data || !data.data) {
             return (
@@ -40,7 +41,7 @@ const ProductDescrption = () => {
                         <section className=" flex flex-wrap items-center justify-around gap-4 md:gap-10">
                               {
                                     data.data.images.map((img) => (
-                                          <img src={img} alt="" className="w-26 md:w-38 hover:scale-190 transition-transform duration-250 " />
+                                          <img src={img} alt="imagen de los productos" className="w-26 md:w-38 hover:scale-190 transition-transform duration-250 " />
                                     ))
                               }
                         </section>

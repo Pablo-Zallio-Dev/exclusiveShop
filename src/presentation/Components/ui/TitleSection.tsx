@@ -4,7 +4,7 @@ const TitleSection = ({titleText}: {titleText: string})  => {
   return (
     <>
       <section className=" flex items-center gap-4 ">
-            <img src={iconRectangle } alt="" />
+            <img src={iconRectangle } alt="icono de titulo de seccion" />
             <h2 className=" text-red text-xs font-semibold "> {titleText} </h2>
       </section>
     </>

@@ -16,7 +16,7 @@ const BannerProducts = () => {
                               <button className=" w-max px-4 py-2 bg-green-banner text-xs font-semibold  ">¡Compra ya!</button>
                         </section>
                         <section className="">
-                              <img src={imageBanner} alt="" className=' lg:w-50 ' />
+                              <img src={imageBanner} alt="imagen de banner" className=' lg:w-50 ' />
                         </section>
 
                   </section>

@@ -49,7 +49,7 @@ const FinishBuy = ({ isOpen, onClose, cartItems }: Portal) => {
                         {
                               cartItems.map((product) => (
                                     <section className=" grid grid-cols-4 justify-items-center items-center gap-2  text-xxs md:text-sm ">
-                                          <img src={product.product.images[0]} alt="" className=" w-16 " />
+                                          <img src={product.product.images[0]} alt="imagen del producto " className=" w-16 " />
                                           <p className=" "> {product.product.title} </p>
                                           <p className=""> X {product.quantity} </p>
                                           <p className=""> {(product.product.price * product.quantity).toFixed(2)} </p>
@@ -61,7 +61,7 @@ const FinishBuy = ({ isOpen, onClose, cartItems }: Portal) => {
                               <p className=""> {totalPrice} </p>
                         </section>
                         <section className=" flex justify-end px-12 ">
-                              <img src={iconsCards} alt="" className=" w-32 md:w-48 " />
+                              <img src={iconsCards} alt="icono de las tarjetas bancarias" className=" w-32 md:w-48 " />
                         </section>
                         <div className=" flex gap-3.5 justify-center ">
                               <button className=" bg-red py-2 px-3 my-10 text-white font-semibold rounded-md " onClick={handleFinalize}>Realizar Pedido</button>

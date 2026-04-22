@@ -41,15 +41,15 @@ const FooterLists = () => {
                               <section className=" flex gap-2 ">
                                     <img src={imageCodeQr} alt="" />
                                     <section className=" flex flex-col gap-2 ">
-                                          <img src={imageGooglePlay} alt="" />
-                                          <img src={imageAppStore} alt="" />
+                                          <img src={imageGooglePlay} alt="icono de google play" />
+                                          <img src={imageAppStore} alt="icono de app store apple" />
                                     </section>
                               </section>
                               <section className=" flex gap-5 pt-5      ">
-                                    <img src={iconFacebook} alt="" />
-                                    <img src={iconTwitter} alt="" />
-                                    <img src={iconInstagram} alt="" />
-                                    <img src={iconLinkedin} alt="" />
+                                    <img src={iconFacebook} alt="icono de facebook " />
+                                    <img src={iconTwitter} alt="icono de twitter " />
+                                    <img src={iconInstagram} alt="icono de instagram " />
+                                    <img src={iconLinkedin} alt="icono de Linkedin " />
                               </section>
                         </section>
                   </section>

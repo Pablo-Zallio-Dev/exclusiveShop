@@ -38,7 +38,7 @@ const CartDetails = () => {
                                           <section className=" grid grid-cols-5 items-center justify-items-center px-2 py-3 my-6 text-xxs md:text-sm border border-secondary-gray shadow-sm/20 ">
                                                       <X size={16} color="#ffffff" className="  bg-red w-4 h-4 p-0.5 rounded-full" onClick={() => clearProduct(item.product.id)} />
                                                 <section className=" relative group ">
-                                                      <img src={item.product.images[0]} alt="" className=' w-18 md:w-22 ' />
+                                                      <img src={item.product.images[0]} alt="imagen del producto" className=' w-18 md:w-22 ' />
 
                                                 </section>
                                                 <p className=""> {item.product.price}€ </p>

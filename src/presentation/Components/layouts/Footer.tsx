@@ -7,7 +7,7 @@ const Footer = () => {
                   <section className="  flex flex-col items-center py-3 pb-20 bg-black text-white ">
                         <FooterLists />
                         <section className=" flex items-center gap-1 ">
-                              <img src={iconCopyright} alt="" />
+                              <img src={iconCopyright} alt="Icon Copyright footer" />
                               <p className=" text-footer ">Copyright Rimel 2022. All right reserved</p>
                         </section>
                   </section>

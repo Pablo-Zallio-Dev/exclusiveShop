@@ -28,7 +28,7 @@ const About = () => {
                               </div>
                         </div>
                         <div className=" max-w-150 ">
-                              <img src={imageAbout} alt="" className=" md:grayscale-40 md:hover:grayscale-10 transition-all duration-400 " />
+                              <img src={imageAbout} alt="imagen de seccion nosotros" className=" md:grayscale-40 md:hover:grayscale-10 transition-all duration-400 " />
                         </div>
                   </section>
             </section>
