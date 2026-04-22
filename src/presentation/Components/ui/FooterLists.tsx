@@ -3,10 +3,10 @@ import imageCodeQr from '../../../assets/images/image-codigoQr.png'
 import imageGooglePlay from '../../../assets/images/image-googlePlay.png'
 import imageAppStore from '../../../assets/images/image-appStore.png'
 
-import iconFacebook from '../../../assets/icons/icon-Facebook.svg'
-import iconTwitter from '../../../assets/icons/icon-Twitter.svg'
+import iconFacebook from '../../../assets/icons/icon-facebook.svg'
+import iconTwitter from '../../../assets/icons/icon-twitter.svg'
 import iconInstagram from '../../../assets/icons/icon-instagram.svg'
-import iconLinkedin from '../../../assets/icons/Icon-Linkedin.svg'
+import iconLinkedin from '../../../assets/icons/Icon-linkedin.svg'
 
 const FooterLists = () => {
       return (
