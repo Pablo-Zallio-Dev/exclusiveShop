@@ -9,12 +9,14 @@ const GallerySearch = () => {
       console.log(productSearch)
       return (
             <>
-
+                  <section className=" pt-40 md:pt-60 ">
                   {
                         productSearch.length > 0
                               ? <ProductResult products={productSearch} />
                               : <SearchEmpty />
                   }
+
+                  </section>
 
 
                  

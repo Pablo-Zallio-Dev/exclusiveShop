@@ -11,7 +11,7 @@ const IconButtons = ( {prod}: {prod: Product} ) => {
 
 
       return (
-            <section className=" flex flex-col gap-2   ">
+            <section className=" flex flex-col gap-2  ">
                   <section className={` p-1.5 rounded-full ${ isFav  ?'bg-red': 'bg-white' } `} onClick={() => toggleFavorite(prod)}>
                         <Heart  className=" w-3.5 md:w-4.5 h-3.5 md:h-4.5  " />
                   </section>

@@ -31,12 +31,12 @@ const ProductDescrption = () => {
 
 
       return (
-            <section className=" px-6 md:px-18 lg:px-32 pb-12  ">
+            <section className=" px-6 md:px-18 lg:px-32 pb-12 pt-50 md:pt-60  ">
                   <div className=" py-10 text-xs md:block ">
                         <Link to='/'>Inicio / </Link>
                         <span className=" font-semibold "> {data.data.title} </span>
                   </div>
-                  <section className=" flex flex-col md:flex-row items-center gap-6 lg:gap-18 max-w-250 mx-auto ">
+                  <section className=" flex flex-col md:flex-row items-center gap-6 lg:gap-18 max-w-250 mx-auto md:py-20 ">
                         <section className=" flex flex-wrap items-center justify-around gap-4 md:gap-10">
                               {
                                     data.data.images.map((img) => (

@@ -53,7 +53,7 @@ const CartDetails = () => {
 
                                     }
                                     <PriceTotalCart />
-                                    <section className=" flex justify-center py-24 ">
+                                    <section className=" flex justify-center py-16 ">
                                           <button className=' py-2 px-4 rounded-lg bg-red/80 shadow-md/30 md:cursor-pointer md:hover:scale-110 transition-transform duration-200 ' onClick={() => setFinishBuy(true)}> Finalizar compra 🎉</button>
                                     </section>
                               </>

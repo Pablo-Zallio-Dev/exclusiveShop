@@ -8,7 +8,7 @@ const Favorites = () => {
       const favoritesProducts = FavoriteStore((state) => state.favorites)
       return (
             <>
-                  <section className="px-10 md:px-18 lg:px-32 py-24">
+                  <section className="px-10 md:px-18 lg:px-32 py-24 pt-60 md:pt-80">
 
 
                         {

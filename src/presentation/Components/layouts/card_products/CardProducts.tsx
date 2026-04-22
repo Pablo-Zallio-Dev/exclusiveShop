@@ -17,8 +17,8 @@ const CardProducts = ({ prod }: { prod: Product }) => {
                                     className="w-full object-contain bg-secondary-gray md:group-hover:scale-110 transition-transform duration-150 "
                               />
                               <section className=" absolute top-0 p-2.5 flex justify-between items-start w-full ">
-                              <BadgeDiscount discount={prod.discount} />
-                              <IconButtons prod={prod} />
+                                    <IconButtons prod={prod} />
+                                    <BadgeDiscount discount={prod.discount} />
                               </section>
                               <ButtonAdd item={prod} />
                         </div>

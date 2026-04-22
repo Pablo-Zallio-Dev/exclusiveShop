@@ -69,8 +69,13 @@ const FinishBuy = ({ isOpen, onClose, cartItems }: Portal) => {
                   </section>
 
                   <Toaster
-                        position="top-center"
+                        position="bottom-right"
                         reverseOrder={false}
+                        toastOptions={{
+                              style:{
+                                   marginBlock: '3rem'
+                              }
+                        }}
                   />
 
             </section>
