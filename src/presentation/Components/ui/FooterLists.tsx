@@ -6,7 +6,7 @@ import imageAppStore from '../../../assets/images/image-appStore.png'
 import iconFacebook from '../../../assets/icons/icon-facebook.svg'
 import iconTwitter from '../../../assets/icons/icon-twitter.svg'
 import iconInstagram from '../../../assets/icons/icon-instagram.svg'
-import iconLinkedin from '../../../assets/icons/Icon-linkedin.svg'
+import iconLinkedin from '../../../assets/icons/icon-linkedin.svg'
 
 const FooterLists = () => {
       return (
